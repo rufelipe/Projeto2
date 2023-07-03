@@ -1,0 +1,51 @@
+:root{
+    --cor-fundo : rgb(0, 0, 0);
+    --cor-hover :  greenyellow;
+    --cor-primaria : rgb(238, 238, 238);
+}
+body{
+    background: #000000;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+.dp-menu ul{
+    background-color: var(--cor-fundo);
+    display:  flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    
+}
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+.dp-menu ul li a{
+    color:  var(--cor-primaria);
+    text-decoration: none;
+    padding: 10px;
+    transition: background .5s;
+}
+.dp-menu ul li a:hover{
+    background-color:  var(--cor-hover); 
+}
+/*submenu*/
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+.dp-menu ul li:hover ul{
+    display: block;
+}
+.dp-menu ul ul {
+    width: 150px;
+}
+.dp-menu ul ul li a{
+    display: block;
+}
